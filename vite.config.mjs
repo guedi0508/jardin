@@ -17,11 +17,11 @@ export default defineConfig({
   },
   server: {
     port: Number(process.env.PORT) || 4173, // Usa el puerto de Render o el 4173 por defecto
-    host: "0.0.0.0" // Permite conexiones externas
+    host: "0.0.0.0", // Permite conexiones externas
+    allowedHosts: ['jardin-1.onrender.com'] // Agrega el host permitido aquí
   },
   preview: {
     port: Number(process.env.PORT) || 4173,
-    host: "0.0.0.0",
-    allowedHosts: ['jardin-1.onrender.com'] // Agrega el host permitido
+    host: "0.0.0.0"
   }
 })
