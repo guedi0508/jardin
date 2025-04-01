@@ -15,4 +15,12 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    port: Number(process.env.PORT) || 4173, // Usa el puerto de Render o el 4173 por defecto
+    host: "0.0.0.0" // Permite conexiones externas
+  },
+  preview: {
+    port: Number(process.env.PORT) || 4173,
+    host: "0.0.0.0"
+  }
 })
