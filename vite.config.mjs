@@ -21,6 +21,7 @@ export default defineConfig({
   },
   preview: {
     port: Number(process.env.PORT) || 4173,
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+    allowedHosts: ['jardin-1.onrender.com'] // Agrega el host permitido
   }
 })
